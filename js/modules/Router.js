@@ -14,11 +14,11 @@ export class Router {
     static #routes = []
 
     static onPreRouting = (path, found) => {
-        console.info('🏎️', path,found)
+        console.info('🏎️', path, found)
     }
 
     static onPostRouting = (path, found) => {
-        console.info('🏎️', path, "was" , (found ? '' : 'NOT') + ' found')
+        console.info('🏎️', path, "was", (found ? '' : 'NOT') + ' found')
     }
 
     static addRoute(path_regexp, module, args = null) {
@@ -64,7 +64,7 @@ export class Router {
     static listenLinks() {
         document.querySelectorAll(`[href]:not(.${ROUTER_LISTEN_CLASS}):not(link)`).forEach(link => {
             link.classList.add(ROUTER_LISTEN_CLASS);
-            if (link.href.substring(0,1) === '#') return;
+            if (link.href.substring(0, 1) === '#') return;
             link.addEventListener('click', event => this.navigate(event));
         });
     }

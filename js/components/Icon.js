@@ -16,16 +16,18 @@ export class Icon extends HTMLElement {
             document.head.append(Util.element('link', {rel: 'stylesheet', href: fontURL}));
         }
     }
+
     update() {
         const style = 'fa-' + (this.hasAttribute('outline') ? 'regular' : 'solid');
         const iconName = ' ' + 'fa-' + (this.getAttribute('icon') || 'star');
         const fixedWidth = this.hasAttribute('fw') ? ' fa-fw' : '';
-        this.icon.className = `${style + iconName + fixedWidth}`;
+        this.icon.className = style + iconName + fixedWidth;
     }
 
     static get observedAttributes() {
         return ['icon', 'fw', 'outline'];
     }
+
     attributeChangedCallback(name, oldValue, newValue) {
         if (name === 'icon' || name === 'fw' || name === 'outline') {
             this.update();
