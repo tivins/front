@@ -36,4 +36,4 @@ export class Icon extends HTMLElement {
 
 }
 
-customElements.define('v-icon', Icon);
+customElements.define('tivins-icon', Icon);
