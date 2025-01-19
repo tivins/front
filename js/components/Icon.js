@@ -1,5 +1,13 @@
 import {Util} from "../modules/Util.js";
 
+/**
+ * Usage:
+ *
+ * ```html
+ * <head><script src="path/to/Icon.js"></script></head>
+ * <body><tivins-icon icon="user" outline></tivins-icon></body>
+ * ```
+ */
 export class Icon extends HTMLElement {
     constructor() {
         super();

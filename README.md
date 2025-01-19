@@ -6,6 +6,13 @@ things about front
 * `Mason` (`<tivins-mason columns=5>`)
 * `ScrollToTop` (`<tivins-scroll-top>`)
 * `Icon` (`<tivins-icon icon="bell" outline fw>`)
+* `CopyToClipboard` (`<copy-to-clipboard target="element-id>`)
+
+## Instances
+
+* ModalManager
+* Toasts
+* ContextMenu
 
 ## Modules
 

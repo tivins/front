@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Front - demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="theme/main.css">
+    <script type="module" src="main.js"></script>
+    <script type="module" src="js/components/Icon.js"></script>
+    <script type="module" src="js/components/ScrollToTop.js"></script>
+    <script type="module" src="js/components/CopyToClipboard.js"></script>
+</head>
+<body>
+<div class="p-2">
+    <h1 class="text-xxl"><tivins-icon icon="check" fw class="mr-1"></tivins-icon>Front</h1>
+
+    <div class="py-2 flex flex-column gap">
+        <a class="button outline " href="examples/scroll.html">Standalone "Scroll to Top" WebComponent<div class="text-xs opacity-50">Minimal example HTML</div></a>
+        <a class="button outline " href="examples/icons.html">Standalone "Icons" WebComponents<div class="text-xs opacity-50">icons</div></a>
+        <div class="border p-1 radius-1" ><button id="demo-addToast">toast</button></div>
+        <div class="border p-1 radius-1" ><button id="demo-addPopup">modal</button></div>
+        <div class="border p-1 radius-1" >
+            <span id="ctc">Copy to clipboard</span> <copy-to-clipboard target="ctc"></copy-to-clipboard>
+        </div>
+        <div class="border p-1 radius-1" >
+            <button id="demo-apiCall">API call</button>
+            <pre id="api_result"></pre>
+        </div>
+        <div class="border p-1 radius-1" >
+            <button id="demo-contextMenu">contextMenu</button>
+        </div>
+    </div>
+
+
+</div>
+<scroll-to-top></scroll-to-top>
+</body>
+</html>
